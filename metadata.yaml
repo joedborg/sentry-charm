@@ -1,0 +1,23 @@
+name: Sentry
+summary: Sentry is a modern error logging and aggregation platform.
+maintainer: Joseph David Borġ <joseph.borg@canonical.com>
+description: |
+  The Sentry package fundamentally is just a simple server and web
+  UI. It will handle authenticating clients (such as Raven) and all
+  of the logic behind storage and aggregation.
+
+  That said, Sentry is not limited to Python. The primary
+  implementation is in Python, but it contains a full API
+  for sending events from any language, in any application.
+tags:
+  - application
+provides:
+  website:
+    interface: http
+requires:
+  db:
+    interface: pgsql
+  db:
+    interface: redis
+series:
+  - xenial

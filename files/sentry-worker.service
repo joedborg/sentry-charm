@@ -1,0 +1,9 @@
+[Unit]
+Description = Sentry Worker
+After = network.target
+
+[Service]
+ExecStart = sentry run worker
+
+[Install]
+WantedBy = multi-user.target

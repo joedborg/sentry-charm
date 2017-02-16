@@ -1,0 +1,13 @@
+options:
+  version:
+    type: string
+    description: Version of Sentry to install
+    default: 8.13.0
+  admin_email:
+    type: string
+    description: Email address of initial account
+    default: sentry@localhost
+  admin_password:
+    type: string
+    description: Passoword of initial account
+    default: sentry
