@@ -1,4 +1,4 @@
-name: Sentry
+name: sentry
 summary: Sentry is a modern error logging and aggregation platform.
 maintainer: Joseph David Borġ <joseph.borg@canonical.com>
 description: |
@@ -11,13 +11,16 @@ description: |
   for sending events from any language, in any application.
 tags:
   - application
+  - application_development
 provides:
   website:
     interface: http
 requires:
   db:
     interface: pgsql
-  db:
+    optional: false
+  redis:
     interface: redis
+    optional: false
 series:
   - xenial

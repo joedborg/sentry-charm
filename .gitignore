@@ -92,3 +92,7 @@ ENV/
 
 # IDEA IDEs
 .idea/
+
+# Juju builds
+builds/
+deps/
