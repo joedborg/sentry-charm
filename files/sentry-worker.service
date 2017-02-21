@@ -3,7 +3,7 @@ Description = Sentry Worker
 After = network.target
 
 [Service]
-ExecStart = sentry run worker
+ExecStart = /usr/local/bin/sentry run worker
 
 [Install]
 WantedBy = multi-user.target

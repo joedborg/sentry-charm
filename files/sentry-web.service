@@ -3,7 +3,7 @@ Description = Sentry Web
 After = network.target
 
 [Service]
-ExecStart = sentry run web
+ExecStart = /usr/local/bin/sentry run web
 
 [Install]
 WantedBy = multi-user.target
