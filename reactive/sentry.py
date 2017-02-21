@@ -9,11 +9,14 @@ from charmhelpers.contrib.python.packages import pip_install
 
 
 def copy_service_files():
+    systemd_dir = '/usr/lib/systemd/system/'
+    if not os.path.isdir(systemd_dir):
+        os.mkdir(systemd_dir)
     for f in os.listdir('./files'):
         if f.endswith('.service'):
             shutil.copy(
                 os.path.join('files', f),
-                os.path.join('/usr/lib/systemd/user/', f)
+                os.path.join(systemd_dir, f)
             )
 
 
