@@ -93,6 +93,9 @@ ENV/
 # IDEA IDEs
 .idea/
 
+# VS Code
+.vscode/
+
 # Juju builds
 builds/
 deps/
