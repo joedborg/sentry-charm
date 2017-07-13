@@ -16,7 +16,7 @@ See Known Limitations and Issues
 
 ## Known Limitations and Issues
 
-This charm needs to be split into 2 seperate charms - the web and celery worker.  At 
+This charm needs to be split into 3 seperate charms - the web celery and cron worker.  At 
 this point, we would be able to scale the charm properly.  At this point, we can only 
 scale the web and celery workers together.
 
